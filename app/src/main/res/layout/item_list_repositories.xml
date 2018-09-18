@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textNameRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Nome Repositório" />
+
+    <TextView
+        android:id="@+id/textDescriptionRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameRepository"
+        tools:text="Descrição dos Repositorios" />
+
+    <ImageView
+        android:id="@+id/imageUserRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src=""
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textUsernameRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageUserRepository"
+        tools:text="Username" />
+
+    <TextView
+        android:id="@+id/textSecondNameRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textUsernameRepository"
+        tools:text="Nome secundario" />
+
+    <ImageButton
+        android:id="@+id/imageButtonForkRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textDescriptionRepository"
+        tools:text="640" />
+
+    <ImageButton
+        android:id="@+id/imageButtonFavorityRepository"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/imageButtonForkRepository"
+        app:layout_constraintTop_toBottomOf="@+id/textDescriptionRepository" />
+
+</android.support.constraint.ConstraintLayout>
