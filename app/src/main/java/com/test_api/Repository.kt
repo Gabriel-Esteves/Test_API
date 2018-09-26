@@ -1,6 +1,7 @@
 package com.test_api
 
-class Repository (val nameRepository: String,
-                  val descriptionRepository: String,
-                  val nameUser: String,
-                  val subnameUser: String)
+class Repository(val nameRepo: String,
+                 val descriptionRepo: String,
+                 val nameUser: String,
+                 val subnameUser: String,
+                 val imageUser: String)

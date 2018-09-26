@@ -6,11 +6,12 @@ import retrofit2.converter.gson.GsonConverterFactory
 class RetrofitInitializer {
 
     private val retrofit = Retrofit.Builder()
-            .baseUrl("https://api.github.com/")
+            .baseUrl("https://api.github.com")
             .addConverterFactory(GsonConverterFactory.create())
-            .build()
+            .build()}
 
 
-    fun repositoryService() = retrofit.create(RepositoryService::class.java)
+/*
+    fun repositoryService() = retrofit.create(RepositoryAPI::class.java)
 
-}
+}*/
