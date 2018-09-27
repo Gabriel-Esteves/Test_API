@@ -12,13 +12,13 @@ class RepositoryViewHolder (itemView: View) : RecyclerView.ViewHolder(itemView) 
         val userName = itemView.textUsernameRepository
         val secondNameUser = itemView.textSecondNameRepository
 
-
         nameRepo.text = repository.nameRepo
         descriptionRepo.text = repository.descriptionRepo
         userName.text = repository.nameUser
         secondNameUser.text = repository.subnameUser
     }
-
 }
+
+
 
 
